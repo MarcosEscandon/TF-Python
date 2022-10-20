@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva Wyndham Maya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="https://drive.google.com/uc?export=download&id=1FN8xTxCBKhahCW9W4NFbOOodD1o3e38q" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">nosotros</a> </li>
+          <li><a href="#rooms">habitaciones</a> </li>
+          <li><a href="#services">servicios</a> </li>
+          <li><a href="#pages">subscripcion</a> </li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contacto</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">RESERVA</button> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="https://drive.google.com/uc?export=download&id=17T24NDhjG47Wn3HpQFQskOXQQoT4v4TI" alt="Piscina descubierta atardecer">
+          <div class="text">
+            <h1>DISFRUTA TUS VACACIONES</h1>
+            <p>La Rivera Maya te espera.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Descubre más</button>
+              <button class="secondary-btn">Reserva</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://drive.google.com/uc?export=download&id=1swbkZt77gCbuhs84eGUjW38P4QT9Exwi" alt="Recepcion">
+          <div class="text">
+            <h1>Elegí tu comida favorita</h1>
+            <p>Disfruta de nuestra variedad de restaurantes.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Descubre más</button>
+              <button class="secondary-btn">Reserva</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://drive.google.com/uc?export=download&id=1MMyuoRmG2yo1BGGMo7HQbEJa3ezt_zn-" alt="Piscina descubierta dia">
+          <div class="text">
+            <h1>Experimenta la tranquilidad</h1>
+            <p>Contamos con un área de piscina solo para adultos.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Descubre más</button>
+              <button class="secondary-btn">Reserva</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Reserva </span> Tu Estadía </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Llegada">
+          <input type="date" placeholder="Salida">
+          <input type="number" placeholder="Adultos">
+          <input type="number" placeholder="Niños">
+          <input type="submit" value="CHEQUEA DISPONIBILIDAD">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top" id="about">
+    <div class="container flex" data-aos="fade-down">
+      <div class="left">
+        <div class="heading">
+          <h1>BIENVENIDO</h1>
+          <h2>Wyndham Maya</h2>
+        </div>
+        <p>Bienvenido a Viva Wyndham Maya, un excepcional complejo hotelero con todo incluido. Desde fiestas temáticas y espectáculos en vivo hasta actividades como tenis, voleibol de playa, 
+          esnórquel, buceo y nuestra piscina con vista al mar, contamos con un amplio abanico de recreación en las instalaciones. El sereno spa Renova ofrece tratamientos de spa y servicios de salón de belleza, y cinco restaurantes en el hotel sirven platos de autor locales e internacionales.</p>
+        
+      </div>
+      <div class="right" data-aos="fade-left">
+        <img src="https://drive.google.com/uc?export=download&id=1rfJ2RcusTwfo5M0SMWqci-jPn74gKtQP" alt="Bienvenido">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box" data-aos="fade-down">
+        <h1>+10000</h1>
+        <hr>
+        <span>Pasajeros al año</span>
+      </div>
+      <div class="box" data-aos="fade-down">
+        <h1>120.250</h1>
+        <hr>
+        <span>Socios Wyndham</span>
+      </div>
+      <div class="box" data-aos="fade-down">
+        <h1>150</h1>
+        <hr>
+        <span>Personal del Hotel</span>
+      </div>
+      <div class="box" data-aos="fade-down">
+        <h1>5</h1>
+        <hr>
+        <span>Restaurantes</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms" id="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRA</h1>
+        <h2>Nuestras habitaciones</h2>
+        <p>Una gran variedad de habitaciones, para una gran variedad de pasajeros.
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1FXf6ct-hHQ4h8cjzW8hJGrMkjtsVK_Kg" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Deluxe Queen</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Vista al jardín, balcón o terraza.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$350 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=12xb6Gnh9PHEFGlJeqgL0DHlcLeMMs7wy" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Queen individual</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Terraza, 1 cama Queen.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$250 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=12FKs9lr3eAHzf90TYePPWmLBvlN1Xqs5" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Superior Ocean</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Vista al mar, balcón o terraza.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$250 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1Pta6g3HU-UOYVsfLAOBG-n0PuvLhlvdD" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Superior Garden</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Vista al jardín, 1 cama King.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$250 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1UzlaLYVzLOzmWiyGD8WQhRD0kmMlUZk2" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Queen Jardín</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Vista al jardín, 2 camas Queen.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$250 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1LUIgEFrUvhq1T50zzUHVrMmBsGTBLUu0" alt="habitacion">
+            </div>
+            <div class="text">
+              <h2>Queen Mar superior</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Vista al mar, 2 camas Queen.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">RESERVA</button>
+                <h3>$250 <span> <br> Por Noche </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>Galeria</h1>
+        <h2>Fotos</h2>
+        <p>Descubri todo lo que Wyndham Maya tiene para ofrecerte.
+      </div>
+    </div>
+
+    <div class="container_del_container">
+        
+      <div class="container-all">
+
+          <input type="radio" id="1" name="image-slide" hidden/>
+          <input type="radio" id="2" name="image-slide" hidden/>
+          <input type="radio" id="3" name="image-slide" hidden/>
+          <input type="radio" id="4" name="image-slide" hidden/>
+          <input type="radio" id="5" name="image-slide" hidden/>
+          <input type="radio" id="6" name="image-slide" hidden/>
+          <input type="radio" id="7" name="image-slide" hidden/>
+          <input type="radio" id="8" name="image-slide" hidden/>
+          
+
+          <div class="slide">
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1U00v4VufqvcbbGenheO4x56lpPDoYnic">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1OXKeyfMGT5JEzngTpJKujUeHZTRRrEi7">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1krpNq8fXFNWL3XNZYKfmTQVGu_VM1zjv">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1I2TVXSWz7pRHvareV4Hz9iT4k7RvQlSh">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1egIHWJGtf8nXu6r1jJUatEatewJv6qQo">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=165r1ZEhzdaxVhlDgSD4Sei-IAhE80E6K">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1I8yWnT2Nco4l03krTTzop2AkM7_ELirk">
+              </div>
+
+              <div class="item-slide">
+                  <img src="https://drive.google.com/uc?export=download&id=1zoWnP8Cz2n896jj1lcvvi4aKYqKAeXGJ">
+              </div>
+
+          </div>
+
+          <div class="pagination">
+          
+              <label class="pagination-item" for="1">
+                  <img src="https://drive.google.com/uc?export=download&id=1U00v4VufqvcbbGenheO4x56lpPDoYnic">
+              </label>
+              
+              <label class="pagination-item" for="2">
+                  <img src="https://drive.google.com/uc?export=download&id=1OXKeyfMGT5JEzngTpJKujUeHZTRRrEi7">
+              </label>
+              
+              <label class="pagination-item" for="3">
+                  <img src="https://drive.google.com/uc?export=download&id=1krpNq8fXFNWL3XNZYKfmTQVGu_VM1zjv">
+              </label>
+
+              <label class="pagination-item" for="4">
+                  <img src="https://drive.google.com/uc?export=download&id=1I2TVXSWz7pRHvareV4Hz9iT4k7RvQlSh">
+              </label>
+              
+              <label class="pagination-item" for="5">
+                  <img src="https://drive.google.com/uc?export=download&id=1egIHWJGtf8nXu6r1jJUatEatewJv6qQo">
+              </label>
+
+              <label class="pagination-item" for="6">
+                  <img src="https://drive.google.com/uc?export=download&id=165r1ZEhzdaxVhlDgSD4Sei-IAhE80E6K">
+              </label>
+              
+              <label class="pagination-item" for="7">
+                  <img src="https://drive.google.com/uc?export=download&id=1I8yWnT2Nco4l03krTTzop2AkM7_ELirk">
+              </label>
+
+              <label class="pagination-item" for="8">
+                  <img src="https://drive.google.com/uc?export=download&id=1zoWnP8Cz2n896jj1lcvvi4aKYqKAeXGJ">
+              </label>
+              
+              
+          </div>
+          
+      </div> 
+  </div>
+
+  <section class="services top" id="services">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICIOS</h1>
+        <h2>Nuestros Servicios</h2>
+        <p>Todo incluido = sin preocupaciones.
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Comida Típica</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Deportes</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Restaurentes Propios</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Spa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="https://drive.google.com/uc?export=download&id=1U2Tso7AHBOpaEEgVEA2y1qt17NjRxgpq" alt="servicios">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Uno de los mejores hoteles que visite en mi vida, la verdad que los servicios son muy variados, y el personal siempre 
+            predispuesto a ayudar con lo que sea, definitivamente volvere para poder disfrutar de lo mejor de la Rivera Maya.
+          </p>
+          <h3>Arturo Grottoli</h3>
+          <label>Trip Advisor</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>¿Queres encontrar el hotel ideal al mejor precio?, bueno ya lo hiciste, simplemente increible, los restaurantes son lo mejor
+            recomiendo el restaurente mexicano donde la comida es excelente y el italiano donde el toque de romanticismo no pude faltar.
+          </p>
+          <h3>Eduardo Ojeda</h3>
+          <label>Trivago</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Las mejores playas del caribe, no hay nada como poder disfrutar de un buen masaje junto al sonido de las olas del mar
+            y luego tener la oportunidad de estar mar adentro en una total paz y tranquilidad, sin dudas algo recomendable.
+          </p>
+          <h3>Juanma Hernandez</h3>
+          <label>Despegar.com</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms" id="news">
+    <div class="container">
+      <div class="heading">
+        <h1>NOTICIAS</h1>
+        <h2>Nuestras novedades</h2>
+        <p>Informate acerca de promociones exclusivas de nuestra web y todas las novedades de Wyndham Maya.
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1E74ObQlm7GzQY29kYRTCDRBRcm1vR4Io" alt="novedades">
+            </div>
+            <div class="text">
+              <h2>Nuevo restaurante</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Wyndham</label>
+                <i class="fa fa-heart"></i>
+                <label>973</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Nos enorgullece presentar el nuevo restaurante de tematica europea para disfrutar en Wyndham Maya.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="https://drive.google.com/uc?export=download&id=1Y3xjna-0nXtYRycb6T6eVpYI2fmKUDfG" alt="novedades">
+            </div>
+            <div class="text">
+              <h2>Cafe y Heladeria </h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Wyndham</label>
+                <i class="fa fa-heart"></i>
+                <label>765</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Nos complace anunciar la adición de Gelatto Italiano a nuestra variedad de helados totalmente artesanales.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="https://drive.google.com/uc?export=download&id=1O_OPAzVbc3vXTy-haxCMaIJiWES6JfNi" alt="novedades">
+            </div>
+            <div class="stext">
+              <h2>Nuevo Sport Bar</h2>
+              <p>Sabemos que esperas con ansias el mundial, disfrutalo desde nuestro Sport Bar.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="https://drive.google.com/uc?export=download&id=1phOslvuoIbKWLCI7RfCjWoKVS5DXHgQt" alt="novedades">
+            </div>
+            <div class="stext">
+              <h2>Tus mejores momentos</h2>
+              <p>Di que si con el sonido del mar de fondo y la organizacion a cargo de Wyndham.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop" id="pages">
+    <div class="container flex_space">
+      <h1>Recibi nuestro Newsletter</h1>
+      <input type="text" placeholder="Email">
+      <input type="text" value="Subscribirse">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img class="logo_img" src="https://drive.google.com/uc?export=download&id=1FN8xTxCBKhahCW9W4NFbOOodD1o3e38q" alt="Viva logo">
+        <p>Central de Reservas <br> <br>
+          Argentina 0800 266 0588 <br>
+          Brazil 0800 047 4766 <br>
+          Colombia 01 800 912 4668 <br>
+          Mexico 800 062 1218 <br>
+          Panama 001 800 507 2738 <br>
+          Otros Países 1 (877) 604 0069</p>
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>Grupo Viva</li>
+          <li>Wyndham Maya</li>
+          <li>Aceptacion de Cookies</li>
+          <li>Servicios</li>
+          <li>Politica de privacidad</li>
+        </ul>
+      </div>
+
+      <div class="box" id="contact">
+        <h2>Contacto</h2>
+        <p>
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>5 Paseo Xaman Ha Hotelero, 77710 Playa del Carmen, Q.R., México </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>+52 984 873 4600</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@vivawyndham.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Grupo 17 comision 22509 &copy; Todos los derechos e izquierdos reservados.</p>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

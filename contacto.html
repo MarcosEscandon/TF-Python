@@ -15,11 +15,11 @@
                 <div class="form">
                     <h1>Contacto</h1>
                     <div class="grupo">
-                        <input type="text" name="nombre" id="name" required><span class="barra"></span>
+                        <input type="text" name="nombre" id="name" required pattern="^[a-z][a-z\s]*$"><span class="barra"></span>
                         <label for="nombre">Nombre</label>
                     </div>
                     <div class="grupo">
-                        <input type="text" name="apellido" id="name" required><span class="barra"></span>
+                        <input type="text" name="apellido" id="name" required pattern="^[a-z][a-z\s]*$"><span class="barra"></span>
                         <label for="apellido">Apellido</label>
                     </div>
                     <div class="grupo">
@@ -30,7 +30,7 @@
                         <textarea name="consulta" id="consulta" cols="30" rows="10" required> </textarea>
                         <label for="">Consulta</label>  
                     </div>
-                    <button type="submit" onclick="allLetter(document.#name)">Enviar</button>
+                    <button class="submit" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
@@ -39,19 +39,5 @@
     document.querySelector('.close').addEventListener('click', function() {
     history. back()
     });
-
-    function allLetter(inputtxt)
-  {
-   var letters = /^[A-Za-z]+$/;
-   if(inputtxt.value.match(letters))
-     {
-      return true;
-     }
-   else
-     {
-     alert("No puedes ingresar numeros en estos campos");
-     return false;
-     }
-  }
 </script>
 </html>

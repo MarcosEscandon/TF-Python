@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilos_contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <video src="https://drive.google.com/uc?export=download&id=1FceV6LddRbnaulQEKAmw7uiyX_FiIeF0" autoplay loop muted class="video_fondo"></video>
+    <div class="wrapper">
+        <span class="close"></span>
+            <form action="" method="post" id="form">  
+                <div class="form">
+                    <h1>Contacto</h1>
+                    <div class="grupo">
+                        <input type="text" name="nombre" id="name" required><span class="barra"></span>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="text" name="apellido" id="name" required><span class="barra"></span>
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="email" name="email" id="name" required><span class="barra"></span>
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="grupo">
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" required> </textarea>
+                        <label for="">Consulta</label>  
+                    </div>
+                    <button type="submit" onclick="allLetter(document.#name)">Enviar</button>
+                </div>
+            </form>
+        </div>
+</body>
+<script>
+    document.querySelector('.close').addEventListener('click', function() {
+    history. back()
+    });
+
+    function allLetter(inputtxt)
+  {
+   var letters = /^[A-Za-z]+$/;
+   if(inputtxt.value.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("No puedes ingresar numeros en estos campos");
+     return false;
+     }
+  }
+</script>
+</html>
